@@ -1,16 +1,14 @@
 {
-  "name": "Snow Mo Fo",
-  "version": "0.6",
-  "description": "Make it snow on every webpage",
-  "background_page": "background.html",
-  "popup": "popup.html",
+  "name": "Trello Checklist Hider",
+  "version": "0.1",
+  "description": "Toggle checklists on trello cards from displaying",
+  "manifest_version": 2,
   "browser_action": {
-    "name": "Snow?",
     "icons": ["icon.png"],
     "default_icon": "icon.png"
   },
   "content_scripts": [ {
     "js": [ "jquery.js", "content.js" ],
-    "matches": [ "http://*/*", "https://*/*"]
+    "matches": [ "*://trello.com/*"]
   }]
 }
